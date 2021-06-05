@@ -39,7 +39,7 @@ public class SearchRunner {
             //解的可视化
             // problem.showSolution(path);
             //仅打印路径
-            // problem.printPath(path);
+            problem.printPath(path);
             System.out.println("扩展结点数 = " + astar.expandedNode());
             System.out.println();
         }

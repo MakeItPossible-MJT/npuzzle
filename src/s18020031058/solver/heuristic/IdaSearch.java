@@ -74,12 +74,12 @@ public final class IdaSearch implements Searcher {
         int val;
 //        int[] board = ((PuzzleState)root.getState()).getBoard();
         int eval = root.evaluation();
-        System.out.println("eval = " + eval);
+//        System.out.println("eval = " + eval);
         int i = 1;
         for (int maxDepth = eval; maxDepth > 0; maxDepth = val) {
             val = dfs(root, maxDepth, 0);
             // System.out.println("hashSet.size = " + hashSet.size());
-            System.out.println("maxDepth = " + maxDepth + " cnt = " + cnt);
+//            System.out.println("maxDepth = " + maxDepth + " cnt = " + cnt);
             num = Math.max(cnt, num);
             if (goal != null) break;
 
